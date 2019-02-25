@@ -1,8 +1,8 @@
 /*！
-* @file Obloq/Obloq.ts
+* @file microIoT/microIoT.ts
 * @brief DFRobot's obloq makecode library.
 * @n [Get the module here](http://www.dfrobot.com.cn/goods-1577.html)
-* @n Obloq is a serial port of WIFI connection module, Obloq can connect 
+* @n microIoT is a serial port of WIFI connection module, microIoT can connect 
 *    to Microsoft Azure IoT and other standard MQTT protocol IoT.
 *
 * @copyright	[DFRobot](http://www.dfrobot.com), 2016
@@ -354,38 +354,38 @@ namespace microIoT {
 
     export class PacketaMqtt {
         /**
-         * Obloq receives the message content.
+         * microIoT receives the message content.
          */
         public message: string;
     }
 
 
-    //% advanced=true shim=Obloq::obloqSetTxBufferSize
+    //% advanced=true shim=microIoT::obloqSetTxBufferSize
     function obloqSetTxBufferSize(size: number): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqSetRxBufferSize
+    //% advanced=true shim=microIoT::obloqSetRxBufferSize
     function obloqSetRxBufferSize(size: number): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqEventOn
+    //% advanced=true shim=microIoT::obloqEventOn
     function obloqEventOn(): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqClearRxBuffer
+    //% advanced=true shim=microIoT::obloqClearRxBuffer
     function obloqClearRxBuffer(): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqClearTxBuffer
+    //% advanced=true shim=microIoT::obloqClearTxBuffer
     function obloqClearTxBuffer(): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqforevers
+    //% advanced=true shim=microIoT::obloqforevers
     function obloqforevers(a: Action): void {
         return
     }
@@ -1193,7 +1193,7 @@ namespace microIoT {
 
 
     /**
-     * The HTTP put request,Obloq.put() can only be used for http protocol!
+     * The HTTP put request,microIoT.put() can only be used for http protocol!
      * url(string): URL; content(string):content; time(ms): private long maxWait
      * @param time set timeout, eg: 10000
     */
@@ -1486,7 +1486,7 @@ namespace microIoT {
     //% weight=100
     //% blockGap=50
     //% blockId=obloq_mqtt_callback_user block="on topic_0 received"
-    //% useLoc="Obloq.Obloq_mqtt_callback_user"
+    //% useLoc="microIoT.Obloq_mqtt_callback_user"
     export function Obloq_mqtt_callback_user(cb: (message: string) => void): void {
         Obloq_mqtt_callback(() => {
             const packet = new PacketaMqtt()
@@ -1503,7 +1503,7 @@ namespace microIoT {
     //% blockGap=60
     //% blockId=obloq_mqtt_callback_user_more block="on %top |received"
     //% top.fieldEditor="gridpicker" top.fieldOptions.columns=2
-    //% useLoc="Obloq.Obloq_mqtt_callback_user_more"
+    //% useLoc="microIoT.Obloq_mqtt_callback_user_more"
     //% advanced=true
     export function Obloq_mqtt_callback_user_more(top: TOPIC, cb: (message: string) => void) {
         Obloq_mqtt_callback_more(top, () => {
