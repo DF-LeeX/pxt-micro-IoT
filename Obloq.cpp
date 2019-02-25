@@ -1,6 +1,6 @@
 #include "pxt.h"
 using namespace pxt;
-namespace microIoT {
+namespace Obloq {
 
     //%
     void obloqSetTxBufferSize(int size){
