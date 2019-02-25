@@ -1,5 +1,5 @@
 {
-    "name": "Obloq",
+    "name": "microIoT",
     "version": "1.0.3",
     "description": "Add Wi-Fi connectivity to micro:bit and start your IoT project in 5 minutes!",
     "license": "MIT",
@@ -9,10 +9,10 @@
     },
     "files": [
         "README.md",
-        "Obloq.ts",
-        "Obloq.cpp",
-        "_locales/zh-cn/Obloq-strings.json",
-        "_locales/zh-tw/Obloq-strings.json"
+        "microIoT.ts",
+        "microIoT.cpp",
+        "_locales/zh-cn/microIoT-strings.json",
+        "_locales/zh-tw/microIoT-strings.json"
     ],
     "testFiles": [
         "test.ts",
@@ -20,5 +20,5 @@
         "httpTest.ts"
     ],
     "public": true,
-    "installedVersion": "workspace:dee399dd-48f4-4833-bae7-879f736bfe46"
+    "installedVersion": "workspace:cac70594-1d69-4c1c-b401-e2a9b4aced35"
 }
