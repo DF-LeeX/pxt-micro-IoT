@@ -1,4 +1,4 @@
-# Obloq
+# microIoT
 
 OBLOQ - IoT Module
 ![image](http://wiki.dfrobot.com.cn/images/7/71/OBLOQ%E5%BC%95%E8%84%9A%E8%AF%B4%E6%98%8E%E5%9B%BE.jpg)
