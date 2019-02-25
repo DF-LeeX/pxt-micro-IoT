@@ -360,32 +360,26 @@ namespace microIoT {
     }
 
 
-    //% advanced=true shim=Obloq::obloqSetTxBufferSize
     function obloqSetTxBufferSize(size: number): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqSetRxBufferSize
     function obloqSetRxBufferSize(size: number): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqEventOn
     function obloqEventOn(): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqClearRxBuffer
     function obloqClearRxBuffer(): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqClearTxBuffer
     function obloqClearTxBuffer(): void {
         return
     }
 
-    //% advanced=true shim=Obloq::obloqforevers
     function obloqforevers(a: Action): void {
         return
     }

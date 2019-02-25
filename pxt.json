@@ -10,7 +10,6 @@
     "files": [
         "README.md",
         "microIoT.ts",
-        "Obloq.cpp",
         "_locales/zh-cn/microIoT-strings.json",
         "_locales/zh-tw/microIoT-strings.json"
     ],
