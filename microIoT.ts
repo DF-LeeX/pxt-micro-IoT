@@ -715,7 +715,7 @@ namespace microIoT {
     //% top.fieldEditor="gridpicker" top.fieldOptions.columns=2
     //% advanced=true
     export function Obloq_mqtt_add_topic(top: TOPIC, IOT_TOPIC: string): void {
-        OBLOQ_MQTT_TOPIC[top][0] = IOT_TOPIC
+      /*  OBLOQ_MQTT_TOPIC[top][0] = IOT_TOPIC
         if (!OBLOQ_MQTT_INIT || OBLOQ_WORKING_MODE_IS_STOP) return
 
         let _timeout = 0
@@ -741,7 +741,7 @@ namespace microIoT {
             OBLOQ_WRONG_TYPE = "mqtt subtopic timeout"
         } else {
             OBLOQ_MQTT_TOPIC[top][1] = "true"
-        }
+        }*/
     }
 
     /**
@@ -761,7 +761,7 @@ namespace microIoT {
     //% block="sendPing"
     //% advanced=true
     export function Obloq_send_ping(): boolean {
-        while (OBLOQ_WORKING_MODE_IS_STOP) { basic.pause(20) }
+      /*  while (OBLOQ_WORKING_MODE_IS_STOP) { basic.pause(20) }
         let time = 5000
         if (time < 100) {
             time = 100
@@ -789,7 +789,7 @@ namespace microIoT {
                     return OBLOQ_BOOL_TYPE_IS_TRUE
                 }
             }
-        }
+        }*/
         return OBLOQ_BOOL_TYPE_IS_FALSE
     }
 
@@ -803,7 +803,7 @@ namespace microIoT {
     //% block="get version"
     //% advanced=true
     export function Obloq_get_version(): string {
-        while (OBLOQ_WORKING_MODE_IS_STOP) { basic.pause(20) }
+       /* while (OBLOQ_WORKING_MODE_IS_STOP) { basic.pause(20) }
         let time = 5000
         if (time < 100) {
             time = 100
@@ -831,7 +831,7 @@ namespace microIoT {
                     return OBLOQ_ANSWER_CONTENT
                 }
             }
-        }
+        }*/
         return OBLOQ_STR_TYPE_IS_NONE
     }
 
@@ -1515,7 +1515,7 @@ namespace microIoT {
 
 
     function Obloq_serial_recevice(): void {
-
+/*
         let Obloq_message_str = serial.readString()
         let size = Obloq_message_str.length
         let item = Obloq_message_str
@@ -1623,7 +1623,7 @@ namespace microIoT {
             return
         } else {
             return
-        }
+        }*/
     }
 
     function onEvent() {
